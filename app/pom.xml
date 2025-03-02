@@ -1,0 +1,44 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>application.management</groupId>
+        <artifactId>parent-project</artifactId>
+        <version>21.02.2025</version>
+    </parent>
+
+    <artifactId>executable</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>application.management</groupId>
+            <artifactId>interfaces</artifactId>
+            <version>21.02.2025</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <includes>
+                    <include>**/*</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <version>3.0.0</version>
+                <configuration>
+                    <mainClass>application.management.App</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

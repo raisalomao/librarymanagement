@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>application.management</groupId>
+        <artifactId>parent-project</artifactId>
+        <version>21.02.2025</version>
+        <relativePath>../..</relativePath>
+    </parent>
+
+    <artifactId>extensions</artifactId>
+
+    <dependencies>
+        <dependency>
+            <groupId>application.management</groupId>
+            <artifactId>interfaces</artifactId>
+            <version>21.02.2025</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <id>user-management</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/../</outputDirectory>
+                            <finalName>UserManagementPlugin</finalName>
+                            <classifier>user</classifier>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>report-management</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/../</outputDirectory>
+                            <finalName>ReportManagementPlugin</finalName>
+                            <classifier>report</classifier>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>loan-management</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/../</outputDirectory>
+                            <finalName>LoanManagementPlugin</finalName>
+                            <classifier>loan</classifier>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>book-management</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <outputDirectory>${project.basedir}/../</outputDirectory>
+                            <finalName>BookManagementPlugin</finalName>
+                            <classifier>book</classifier>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
