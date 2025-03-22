@@ -1,19 +1,30 @@
 # Library Management
 This is a book management system for a library. Its main objective is to combine knowledge of object-oriented programming with good design pattern practices in Java. One of its strengths was the application of the entire graphical interface through JavaFX.
 
-> Main presentation screen of the application.
+> Main presentation screen of the application:
 ![Firts Screen](https://github.com/user-attachments/assets/1e3ebdcf-beed-4dad-ab57-f96500d239fd)
 
-> This is the second screen, resulting from the button to start the application. Giving the user the opportunity to click on different menu items for management.
+> This is the second screen, resulting from the button to start the application. Giving the user the opportunity to click on different menu items for management:
 ![Seconcd Screen](https://github.com/user-attachments/assets/10f3df71-ce58-4111-bca8-9ab3551a6c68)
 
 The system has 5 main menus for management: 
-- Books: where you can list the books that have been added and are available, add books and remove them; 
-- Loan Transactions: where the user or library administrator can start a loan and return a loan; 
-- Reports: here you can see which books in the library are currently on loan and which books have passed their loan term and what the current fine rate is in relation to this; 
-- Users: you can list, create, remove and see the entire loan history for each user individually; 
-- Back: Returning to the home page.
+* Books: where you can list the books that have been added and are available, add books and remove them; 
+* Loan Transactions: where the user or library administrator can start a loan and return a loan; 
+* Reports: here you can see which books in the library are currently on loan and which books have passed their loan term and what the current fine rate is in relation to this; 
+* Users: you can list, create, remove and see the entire loan history for each user individually; 
+* Back: Returning to the home page.
 
+# Book Management Section Behavior
+See below the presentation of the screens for each button in the menu item:
+
+### List Books
+![image](https://github.com/user-attachments/assets/d3f840e9-dbe0-4c1d-aa6c-981064290400)
+
+### Add a Book
+![image](https://github.com/user-attachments/assets/24d1cbf6-a6af-4e00-b246-5472c5f80142)
+
+### Remove a Book
+![image](https://github.com/user-attachments/assets/969e5946-a9a9-4631-8477-980c153b236f)
 
 How can i run the application?
 
