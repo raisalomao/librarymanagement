@@ -1,3 +1,6 @@
+# Library Management
+It is a book management system for a library. Its main objective is to combine knowledge of object-oriented programming with good design pattern practices.
+
 How can i run the application?
 
     - mvn install & mvn exec:java -pl app
