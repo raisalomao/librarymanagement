@@ -1,5 +1,8 @@
 # Library Management
-It is a book management system for a library. Its main objective is to combine knowledge of object-oriented programming with good design pattern practices.
+This is a book management system for a library. Its main objective is to combine knowledge of object-oriented programming with good design pattern practices in Java. One of its strengths was the application of the entire graphical interface through JavaFX.
+
+![Principal Screen](https://github.com/user-attachments/assets/1e3ebdcf-beed-4dad-ab57-f96500d239fd)
+
 
 How can i run the application?
 
