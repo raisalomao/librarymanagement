@@ -18,28 +18,42 @@ The system has 5 main menus for management:
 See below the presentation of the screens for each button in the menu item:
 
 ### List Books
+Where you can list the books that have been added and are available. In addition to being able to search by title, author or publication date:
 ![image](https://github.com/user-attachments/assets/d3f840e9-dbe0-4c1d-aa6c-981064290400)
 
 ### Add a Book
+Add all the properties a book can have:
 ![image](https://github.com/user-attachments/assets/24d1cbf6-a6af-4e00-b246-5472c5f80142)
 
 ### Remove a Book
+Remove a book by passing its ID securely:
 ![image](https://github.com/user-attachments/assets/969e5946-a9a9-4631-8477-980c153b236f)
 
-How can i run the application?
+# Loan Transactions Management Section Behavior
+Registering the functionalities focused on loan and return transactions of a book, passing only one or more than one book. The business rule in this case is: each user, per loan, can borrow 5 books at a time:
+
+### Loan a Book
+The administrator or user is asked to identify the ID that will start the loan, the date the loan will take place and select a maximum of 5 books. In addition to being able to search for the title of the book you want to borrow:
+![image](https://github.com/user-attachments/assets/75c9224a-4c8d-4701-bb92-368fdae4ce7e)
+
+### Return a Book
+When clicking the book return button, you must enter the ID of the borrower, the return date and which book you want to return. If there is no loan record in the system, a non-loan message is displayed:
+![image](https://github.com/user-attachments/assets/9a154ac3-eb89-4d39-8b2f-18a37405755a)
+
+### How can i run the application?
 
     - mvn install & mvn exec:java -pl app
 
-Where can I see the code for my plugins?
+### Where can I see the code for my plugins?
 
     - plugins/extensions/src/main/java/application/management/plugins/...
 
-Where are .jar plugins generated?
+### Where are .jar plugins generated?
 
     - plugins/<here>
 
-What is the directory structure?
-    
+### What is the directory structure?
+```
     ├───app
     │   └───src
     │       └───main
@@ -65,8 +79,8 @@ What is the directory structure?
                 │           └───management
                 │               └───plugins
                 └───resources
-
-Extra:
+```
+### Extra informations:
 
     - The system has other icons that can be used. Can be found along the way:
         - app/src/main/resources/...
